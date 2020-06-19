@@ -10,9 +10,6 @@ const CountryContext = React.createContext();
 
 const initialState = {
     Country: "Pakistan",
-    // TotalConfirmed: 'N/A',
-    // TotalDeaths: 'N/A',
-    // TotalRecovered: 'N/A'
 }
 
 function CountryStats() {
