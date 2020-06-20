@@ -6,7 +6,7 @@ const chartOption = {
             {
                 ticks:{
                     beginAtZero: true,
-                    fontSize: '2rem',
+                    fontSize: '1rem',
                     fontColor: 'rgb(212, 207, 197)'
                 },
                 gridLines:{
@@ -17,7 +17,7 @@ const chartOption = {
         ],
         yAxes: [{
             ticks: {
-                fontSize: '2rem',
+                fontSize: '1rem',
                 fontColor: 'rgb(212, 207, 197)'
             },
             gridLines:{
@@ -28,7 +28,7 @@ const chartOption = {
     legend: {
         labels: {
             fontColor: 'rgb(212, 207, 197)',
-            fontSize: 20
+            fontSize: '1rem'
         }
     }
 }

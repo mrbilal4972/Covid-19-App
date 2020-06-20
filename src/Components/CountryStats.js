@@ -5,6 +5,7 @@ import CountryDeaths from './CountryDeaths';
 import CountryRecoveries from './CountryRecoveries';
 import {AppReducer} from './AppReducer';
 import CasesChart from './CasesChart'
+import CountryDeathChart from './CountryDeathChart'
 import axios from 'axios';
 
 const CountryContext = React.createContext();
@@ -64,7 +65,7 @@ function CountryStats() {
                     <CasesChart />
                     </div>
                     <div className='col-lg-5 mt-4'>
-                    <CasesChart />
+                    <CountryDeathChart />
                     </div>
                     </div>
                 </div>

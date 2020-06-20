@@ -18,7 +18,7 @@ function TopFiveCountries() {
                     label: 'Infected People',
                     data: countriesStats,
                     backgroundColor: 'rgba(75, 132, 192, 0.6)',
-                    borderWidth: 4,
+                    borderWidth: 2,
                     borderColor: 'rgb(212, 207, 197)'
                 }
             ]
@@ -33,7 +33,7 @@ function TopFiveCountries() {
                 {
                     ticks:{
                         beginAtZero: true,
-                        fontSize: 24,
+                        
                         fontColor: 'rgb(212, 207, 197)'
                     },
                     gridLines:{
@@ -44,7 +44,7 @@ function TopFiveCountries() {
             ],
             yAxes: [{
                 ticks: {
-                    fontSize: 24,
+                    
                     fontColor: 'rgb(212, 207, 197)'
                 },
                 gridLines:{
@@ -55,7 +55,6 @@ function TopFiveCountries() {
         legend: {
             labels: {
                 fontColor: 'rgb(212, 207, 197)',
-                fontSize: 20
             }
         }
     }

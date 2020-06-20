@@ -7,13 +7,10 @@
 
 .totalData{
   background-image: linear-gradient(-90deg,rgb(135, 194, 157), rgb(82, 163, 122), rgb(135, 194, 157));
-  border-radius: 50%;
+  /* border-radius: 50%; */
   color: black;
 }
 
-.countryList{
-  background-color: red;
-}
 
 
 .countryOption{
