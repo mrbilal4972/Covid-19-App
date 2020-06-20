@@ -24,14 +24,14 @@ function CasesChart() {
         .then(res => { 
             let days = res.data;
             let _15Days = days.sort((a, b) => a.Confirmed - b.Confirmed).slice(-15);
-            console.log(_15Days.forEach((day) => {
+                _15Days.forEach((day) => {
                 let getTimeStamp = new Date (Date.parse(day.Date))
                 let getDate = getTimeStamp.toDateString()
                 date.push(getDate)
                 confirmedCases.push(day.Confirmed)
                 recoverdCases.push(day.Recovered)
-                console.log(recoverdCases)
-            }))
+                // console.log(recoverdCases)
+            })
             return (
             setChartData({
             labels: date,
@@ -58,8 +58,7 @@ function CasesChart() {
         )
         .catch(err => console.log(err))
 
-        // chart();
-    }, [state])
+    }, [state.Slug])
 
   return (
     <>

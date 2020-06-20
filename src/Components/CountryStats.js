@@ -34,7 +34,6 @@ function CountryStats() {
         axios.get('https://api.covid19api.com/summary')
         .then(res => {
             let selectedCountry = res.data.Countries.filter(country => country.Country === state.Country)
-            console.log(selectedCountry[0])
             
                 if(selectedCountry[0])
                     return dispatch({type: 'Country_Stats', stats: selectedCountry[0]})
