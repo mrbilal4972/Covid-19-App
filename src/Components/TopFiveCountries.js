@@ -62,7 +62,8 @@ function TopFiveCountries() {
 
     useEffect(() => {
         chart();
-    }, [chartData])
+        
+    }, [])
 
     const topInfectedCountries = resource.country.read();
     topInfectedCountries.Countries.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed);

@@ -4,12 +4,14 @@ import CountryInfection from './CountryInfection';
 import CountryDeaths from './CountryDeaths';
 import CountryRecoveries from './CountryRecoveries';
 import {AppReducer} from './AppReducer';
+import CasesChart from './CasesChart'
 import axios from 'axios';
 
 const CountryContext = React.createContext();
 
 const initialState = {
     Country: "Pakistan",
+    Slug:	"pakistan"
 }
 
 function CountryStats() {
@@ -57,6 +59,14 @@ function CountryStats() {
                         <CountryInfection />
                         <CountryRecoveries />
                         <CountryDeaths />
+                    </div>
+                    <div className='row'>
+                    <div className='col-lg-5 mt-4'>
+                    <CasesChart />
+                    </div>
+                    <div className='col-lg-5 mt-4'>
+                    <CasesChart />
+                    </div>
                     </div>
                 </div>
             </div>

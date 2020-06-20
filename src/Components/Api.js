@@ -29,7 +29,9 @@ const wrapPromise = (promise) => {
             case 'error':
                 throw result
             case 'success':
-                return result
+                return result;
+            default:
+                throw suspender;
         }
     }
     return { read }

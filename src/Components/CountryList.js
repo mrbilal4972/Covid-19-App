@@ -9,12 +9,12 @@ function CountryList(props) {
 
   return (
     <>
-      <form>
+      <form className=''>
             <div className="form-group">
                 <label htmlFor="exampleFormControlSelect2"><b>Select Country</b></label>
-                <select size="12" name='countries' className="form-control" id="exampleFormControlSelect2">
+                <select size="12" name='countries' className="countryList form-control" id="exampleFormControlSelect2">
                 {countries.map((country, index) => {
-                    return <option onClick= {selectCountry} onChange= {selectCountry} key={index} value={country.Country} className='countryOption'>{country.Country}</option>
+                    return <option onClick= {selectCountry} onChange= {selectCountry} key={index} value={country.Country} className='countryOption '>{country.Country}</option>
                 })} 
                 </select>
             </div>
