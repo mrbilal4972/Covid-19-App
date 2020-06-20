@@ -62,7 +62,7 @@ function TopFiveCountries() {
 
     useEffect(() => {
         chart();
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const topInfectedCountries = resource.country.read();

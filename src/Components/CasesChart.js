@@ -30,8 +30,7 @@ function CasesChart() {
                 date.push(getDate)
                 confirmedCases.push(day.Confirmed)
                 recoverdCases.push(day.Recovered)
-                // console.log(recoverdCases)
-            })
+                })
             return (
             setChartData({
             labels: date,
@@ -57,7 +56,7 @@ function CasesChart() {
         }
         )
         .catch(err => console.log(err))
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [state.Slug])
 
   return (
